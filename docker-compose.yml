@@ -7,6 +7,10 @@ services:
       - 4000:4000
     volumes:
       - '.:/usr/src/app'
+      - docker-composer-elixir-mix:/root/.mix
+
+volumes:
+  docker-composer-elixir-mix:
 
 networks:
   local:
