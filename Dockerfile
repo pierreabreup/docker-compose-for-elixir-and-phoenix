@@ -1,4 +1,4 @@
-FROM elixir:1.7-alpine
+FROM elixir:1.9-alpine
 
 RUN apk add --no-cache bash
 RUN apk add --update \
@@ -11,7 +11,9 @@ WORKDIR /usr/src/app
 
 RUN yes | mix local.hex
 
-RUN yes | mix archive.install hex phx_new 1.4.0
+RUN yes | mix local.rebar --force
+
+RUN yes | mix archive.install hex phx_new 1.4.11
 
 COPY ./entrypoint.sh /etc/entrypoint.sh
 RUN chmod +x /etc/entrypoint.sh
