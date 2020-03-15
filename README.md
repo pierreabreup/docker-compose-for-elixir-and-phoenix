@@ -1,14 +1,18 @@
 # What is it?
 
-This project is a elixir and phoenix docker environment. The following tools aready installed (last release version): nodejs, mix, hex, phx_new
+This project is an elixir and phoenix docker environment. The following tools are installed: 
+* nodejs 
+* mix 
+* hex 
+* phx_new
 
-# Why use it?
+# Why should you use it?
 
-First of all, it is helpful to run phoenix and installs dependencies avoiding conflicts with other react projects. The second reason, it is to make your local machine clean
+First of all, it is helpful to run phoenix and installs dependencies avoiding conflicts with other phoenix projects. The second reason, it makes your local machine clean
 
 # How to use?
 
-After you clone this project, follow the steps:
+After you clone the project, follow the steps:
 - open a terminal session in your terminal tool (Iterm, Terminal, Putty)
 - go to folder where you've clone the project (Ex.: ```cd docker-compose-for-elixir-and-phoenix```)
 - type the command: ```make run```
@@ -16,7 +20,7 @@ After you clone this project, follow the steps:
 This command will run the container and open a session inside the container. If all goes well, you will be in the path ```/usr/src/app```.   In this path, you can run commands like ```mix phx.new myfirst_phonenix_project```
 
 ##### IMPORTANT!
-when you run ```make run```in the first time, the docker image will be created. In the next times, docker compose will use the image.
+when you run ```make run```on the first time, the docker image will be created. In the next times, docker compose will use the image.
 
 # FAQ
 
